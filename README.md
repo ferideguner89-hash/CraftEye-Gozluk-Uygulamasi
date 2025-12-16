@@ -16,7 +16,7 @@ Döviz API (Frankfurter): Ürünlerin güncel kur verileriyle gerçek zamanlı f
 
 ## Veritabanı Yedeği ve Yapılandırma
 Firebase'in NoSQL (döküman tabanlı) yapısı gereği, projenin tüm veritabanı bağlantı ayarları ve yapılandırma yedeği projenin ana dizinindeki google-services.json dosyasında yer almaktadır. Bu dosya, uygulamanın bulut servisleriyle senkronize çalışması için gerekli olan teknik konfigürasyonu ve bağlantı yedeğini temsil eder.
- ##Öne Çıkan Özellikler
+##Öne Çıkan Özellikler
 
 Dijital Reçete Kaydı: Kullanıcıların göz numaralarını ve astigmat değerlerini tarih bazlı saklayabildiği arşiv sistemi.
 
