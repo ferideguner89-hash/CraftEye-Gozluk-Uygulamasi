@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Profil Kartı -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/outline_person_24"/>
+
+                <TextView
+                    android:id="@+id/textUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kullanıcı Adı"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textUserEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="email@example.com"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Menüler -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Favorilerim (Eklenen!) -->
+            <TextView
+                android:id="@+id/btnFavorites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Favorilerim"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground"
+                android:drawablePadding="12dp"
+                android:drawableLeft="@drawable/baseline_favorite_24" />
+
+            <TextView
+                android:id="@+id/btnOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Siparişlerim"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground"
+                android:drawablePadding="12dp"
+                android:drawableLeft="@drawable/baseline_shopping_bag_24" />
+
+            <TextView
+                android:id="@+id/btnAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adreslerim"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground"
+                android:drawablePadding="12dp"
+                android:drawableLeft="@drawable/baseline_maps_home_work_24" />
+
+            <TextView
+                android:id="@+id/btnSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destek"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground"
+                android:drawablePadding="12dp"
+                android:drawableLeft="@drawable/baseline_message_24" />
+
+            <TextView
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ayarlar"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackground"
+                android:drawablePadding="12dp"
+                android:drawableLeft="@drawable/baseline_settings_24" />
+
+            <TextView
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Çıkış Yap"
+                android:textSize="16sp"
+                android:textColor="#B00020"
+                android:background="@color/colorAccentWarning"
+                android:drawableLeft="@drawable/outline_power_settings_new_24"
+                android:drawablePadding="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

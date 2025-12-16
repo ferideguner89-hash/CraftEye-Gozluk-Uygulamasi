@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ad4Fragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- PROFİL BAŞLIĞI -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin Profil"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- AD SOYAD -->
+            <EditText
+                android:id="@+id/edtAdminName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ad Soyad"
+                android:background="@drawable/edditext_background"
+                android:padding="12dp"/>
+
+            <!-- E-POSTA -->
+            <EditText
+                android:id="@+id/edtAdminEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-posta"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edditext_background"
+                android:padding="12dp"
+                android:inputType="textEmailAddress"/>
+
+            <!-- ŞİFRE DEĞİŞTİRME -->
+            <EditText
+                android:id="@+id/edtAdminPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yeni Şifre"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edditext_background"
+                android:padding="12dp"
+                android:inputType="textPassword"/>
+
+            <!-- Şifre Sıfırlama Butonu -->
+            <Button
+                android:id="@+id/btnResetPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Şifreyi Sıfırla"
+                android:layout_marginTop="12dp"/>
+
+            <!-- GÜNCELLE BUTONU -->
+            <Button
+                android:id="@+id/btnUpdateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bilgileri Güncelle"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

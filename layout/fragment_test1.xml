@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <!-- Soru Metni -->
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Soru"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Seçenek 1 -->
+    <Button
+        android:id="@+id/btnOption1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Seçenek 1"
+        app:layout_constraintTop_toBottomOf="@id/txtQuestion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Seçenek 2 -->
+    <Button
+        android:id="@+id/btnOption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Seçenek 2"
+        app:layout_constraintTop_toBottomOf="@id/btnOption1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Seçenek 3 -->
+    <Button
+        android:id="@+id/btnOption3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Seçenek 3"
+        app:layout_constraintTop_toBottomOf="@id/btnOption2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Seçenek 4 -->
+    <Button
+        android:id="@+id/btnOption4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Seçenek 4"
+        app:layout_constraintTop_toBottomOf="@id/btnOption3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

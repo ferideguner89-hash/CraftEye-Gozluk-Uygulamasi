@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ad3Fragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TÜM SİPARİŞLERİN LİSTESİ -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerOrders"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="12dp"/>
+
+        <!-- SİPARİŞ DETAY ALANLARI -->
+        <TextView
+            android:text="Seçilen Sipariş"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtOrderUser"
+            android:layout_width="380dp"
+            android:layout_height="59dp"
+            android:background="@drawable/edditext_background"
+            android:enabled="false"
+            android:hint="Müşteri Adı"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edtOrderTotal"
+            android:layout_width="381dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edditext_background"
+            android:enabled="false"
+            android:hint="Toplam Tutar"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edtOrderDate"
+            android:layout_width="381dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edditext_background"
+            android:enabled="false"
+            android:hint="Tarih"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnApprove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siparişi Onayla"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+</FrameLayout>

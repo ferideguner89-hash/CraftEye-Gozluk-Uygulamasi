@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/a1Fragment"
+        android:icon="@drawable/anasayfa"
+        android:title="Anasayfa" />
+    <item
+        android:id="@+id/a2Fragment"
+        android:icon="@drawable/baseline_apps_24"
+        android:title="Kategoriler" />
+    <item
+        android:id="@+id/a3Fragment"
+        android:icon="@drawable/baseline_search_24"
+        android:title="Keşfet" />
+    <item
+        android:id="@+id/a4Fragment"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="Sepet" />
+    <item
+        android:id="@+id/a5Fragment"
+        android:icon="@drawable/outline_person_24"
+        android:title="Hesap" />
+</menu>

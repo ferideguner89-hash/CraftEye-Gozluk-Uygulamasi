@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- 🔙 BACK BUTONU -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="54dp"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+
+        <!-- Başlık -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="Reçetem"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- ===== SAĞ GÖZ ===== -->
+        <TextView
+            android:text="Sağ Göz"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Sağ Göz Numara -->
+        <TextView
+            android:text="Göz Numarası"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtRightEyeNumber"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Örn: -1.25"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Sağ Astigmat Var mı -->
+        <TextView
+            android:text="Astigmat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerRightAstigmat"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Sağ Astigmat Numarası -->
+        <TextView
+            android:id="@+id/txtRightAstigNum"
+            android:text="Astigmat Numarası"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/edtRightAstigNum"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Örn: -0.75"
+            android:visibility="gone"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ===== SOL GÖZ ===== -->
+        <TextView
+            android:text="Sol Göz"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Sol Numara -->
+        <TextView
+            android:text="Göz Numarası"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtLeftEyeNumber"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Örn: -1.00"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Sol Astigmat Var mı -->
+        <TextView
+            android:text="Astigmat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerLeftAstigmat"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Sol Astigmat Numarası -->
+        <TextView
+            android:id="@+id/txtLeftAstigNum"
+            android:text="Astigmat Numarası"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/edtLeftAstigNum"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Örn: -0.50"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Kaydet Butonu -->
+        <Button
+            android:id="@+id/btnSaveGlass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>

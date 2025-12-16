@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Soru 1 -->
+        <TextView
+            android:id="@+id/tvQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soru 1: Bu görseldeki sayıyı görüyormusunuz?"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+        <ImageView
+            android:id="@+id/imgQuestion1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/renk1"
+            android:contentDescription="Renk Körlüğü Testi Soru 1"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbQ1Option1" android:text="Görüyorum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rbQ1Option2" android:text="Görmüyorum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <!-- Soru 2 -->
+        <TextView
+            android:id="@+id/tvQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soru 2:  Bu görseldeki sayıyı görüyormusunuz?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+        <ImageView
+            android:id="@+id/imgQuestion2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/renk2"
+            android:contentDescription="Renk Körlüğü Testi Soru 2"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/rgQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbQ2Option1" android:text="Görüyorum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rbQ2Option2" android:text="Görmüyorum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <!-- Soru 3 -->
+        <TextView
+            android:id="@+id/tvQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soru 3:  Bu görseldeki sayıyı görüyormusunuz?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+        <ImageView
+            android:id="@+id/imgQuestion3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/renk3"
+            android:contentDescription="Renk Körlüğü Testi Soru 3"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/rgQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbQ3Option1" android:text="Görüyorum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rbQ3Option2" android:text="Görmüyorum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <!-- Soru 4 -->
+        <TextView
+            android:id="@+id/tvQuestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soru 4:  Bu görseldeki sayıyı görüyormusunuz?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+        <ImageView
+            android:id="@+id/imgQuestion4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/renk7"
+            android:contentDescription="Renk Körlüğü Testi Soru 4"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/rgQuestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbQ4Option1" android:text="Görüyorum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rbQ4Option2" android:text="Görmüyorum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <!-- Soru 5 -->
+        <TextView
+            android:id="@+id/tvQuestion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soru 5:  Bu görseldeki sayıyı görüyormusunuz??"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+        <ImageView
+            android:id="@+id/imgQuestion5"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/renk5"
+            android:contentDescription="Renk Körlüğü Testi Soru 5"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/rgQuestion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbQ5Option1" android:text="Görüyorum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rbQ5Option2" android:text="Görmüyorum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <!-- Testi Bitir Butonu -->
+        <Button
+            android:id="@+id/btnFinishTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Testi Bitir"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

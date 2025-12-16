@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ad1Fragment"
+        android:title="Ürünler"
+        android:icon="@drawable/outline_grid_view_24"/>
+    <item
+        android:id="@+id/ad2Fragment"
+        android:title="Kullanıcılar"
+        android:icon="@drawable/outline_diversity_3_24"/>
+    <item
+        android:id="@+id/ad3Fragment"
+        android:title="Siparişler"
+        android:icon="@drawable/baseline_shopping_bag_24"/>
+    <item
+        android:id="@+id/ad4Fragment"
+        android:title="Profil"
+        android:icon="@drawable/outline_person_24"/>
+</menu>

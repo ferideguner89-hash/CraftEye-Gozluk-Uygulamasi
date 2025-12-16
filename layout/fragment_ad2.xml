@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ad2Fragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"> <!-- BottomNavigationView yüksekliği kadar boşluk -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- ARAMA ALANI -->
+            <EditText
+                android:id="@+id/edtSearchUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kullanıcı Ara..."
+                android:padding="12dp"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:background="@drawable/image_background"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- TÜM KULLANICILARIN LİSTESİ -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"
+                android:layout_marginVertical="12dp"/>
+
+            <!-- SEÇİLEN KULLANICIYI GÜNCELLEME BÖLÜMÜ -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcı Bilgileri"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- AD -->
+            <EditText
+                android:id="@+id/edtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/edditext_background"
+                android:hint="Ad"
+                android:padding="10dp" />
+
+            <!-- EMAIL -->
+            <EditText
+                android:id="@+id/edtUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edditext_background"
+                android:hint="E-mail"
+                android:padding="10dp" />
+
+            <!-- HESAP DURUMU: AKTİF / PASİF -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:text="Hesap Durumu (Dondur / Aç)"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/switchAccountActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"/>
+            </LinearLayout>
+
+            <!-- BUTONLAR -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:id="@+id/btnUpdateUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Güncelle"/>
+
+                <Button
+                    android:id="@+id/btnDeleteUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sil"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>
